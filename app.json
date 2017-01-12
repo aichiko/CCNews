@@ -1,12 +1,30 @@
 {
-  "pages":[
+  "pages": [
+    "pages/news/news",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/videos/videos"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/news/news",
+      "text": "news"
+      },
+      {
+      "pagePath": "pages/videos/videos",
+      "text": "text"
+     },
+      {
+      "pagePath": "pages/index/index",
+      "text": "index"
+      }
+    ]
   }
 }
