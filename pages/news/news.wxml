@@ -1,2 +1,18 @@
 <!--pages/news/news.wxml-->
-<text>pages/news/news.wxml</text>
+<scroll-view>
+    <swiper indicator-dots="{{indicator}}" autoplay="true">
+        <block wx:for="{{imageUrl}}">
+            <swiper-item>
+                <image src="{{item}}" mode="scaleToFill"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view wx:for="{{dataArray}}" class="items_view" bindtap="goDetail" hover="true" hover-class="hover-class">
+        <image src="{{item.imgsrc}}" class="itemImage"></image>
+        <view class="title_view"><text class="itemTitle">{{item.title}}</text></view>
+        <view class="source_view"><text class="itemSouce">{{item.source}}</text></view>
+    </view>
+</scroll-view>
+
+
+

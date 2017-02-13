@@ -7,7 +7,7 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "red",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
   },
@@ -19,7 +19,7 @@
       },
       {
       "pagePath": "pages/videos/videos",
-      "text": "text"
+      "text": "videos"
      },
       {
       "pagePath": "pages/index/index",

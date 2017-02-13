@@ -1,1 +1,35 @@
 /* pages/news/news.wxss */
+.items_view {
+    height: 120px;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    position: relative
+}
+
+.items_view .title_view {
+    padding: 10px 10px 10px 110px
+}
+
+.items_view .source_view{
+    padding: 10px 10px 10px 110px
+}
+
+.items_view .itemTitle {
+    color: blue;
+    left: 110px;
+}
+.items_view .itemSouce {
+    color: gray
+}
+
+.items_view .itemImage {
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    padding: 10px 0px;
+    float: left
+}
+
+.hover-class {
+    background-color: gray
+}
