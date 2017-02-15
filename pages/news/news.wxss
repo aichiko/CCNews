@@ -3,15 +3,27 @@
     height: 120px;
     border-bottom-width: 1px;
     border-bottom-color: black;
-    position: relative
+    position: relative;
+    border-bottom: 0.5px solid black;
+}
+.swiper_image {
+    width: 100em;
+    height: 100%
 }
 
 .items_view .title_view {
-    padding: 10px 10px 10px 110px
+    position: relative;
+    left: 10px;
+    top: 20px;
+    width: 95%
 }
 
 .items_view .source_view{
-    padding: 10px 10px 10px 110px
+    position: absolute;
+    /*/left: 10px;*/
+    /*top: 50px;*/
+    left: 120px;
+    bottom: 20px;
 }
 
 .items_view .itemTitle {
@@ -19,14 +31,15 @@
     left: 110px;
 }
 .items_view .itemSouce {
-    color: gray
+    color: gray;
+    font-size: 12px
 }
 
 .items_view .itemImage {
     width: 100px;
     height: 100px;
     top: 20px;
-    padding: 10px 0px;
+    padding: 10px 0px 0px 10px;
     float: left
 }
 

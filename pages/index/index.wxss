@@ -12,6 +12,10 @@
   border-radius: 50%;
 }
 
+.clear_button {
+  height: 40px
+}
+
 .userinfo-nickname {
   color: #aaa;
 }

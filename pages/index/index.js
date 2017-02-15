@@ -23,5 +23,10 @@ Page({
         userInfo:userInfo
       })
     })
+  },
+  clear_action: function(button) {
+    console.log(button)
+    console.log("清除logs日志")
+    wx.removeStorageSync('logs')
   }
 })

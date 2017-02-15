@@ -4,6 +4,7 @@
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
+  <button class="clear_button" type="warn" bindtap="clear_action">clear Storage</button>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>

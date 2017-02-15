@@ -2,12 +2,16 @@
 Page({
   data:{
     dataArray:Array(),
-    imageUrl: ["https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1484295395524&di=d9fff879b6477d5bdc797323f4ba83c0&imgtype=0&src=http%3A%2F%2Fwww.hao1111.cn%2Fuploads%2Fallimg%2F161227%2F2139113R6-0.jpg"],
+    imageUrl: ["https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1484295395524&di=d9fff879b6477d5bdc797323f4ba83c0&imgtype=0&src=http%3A%2F%2Fwww.hao1111.cn%2Fuploads%2Fallimg%2F161227%2F2139113R6-0.jpg","https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1484295395524&di=d9fff879b6477d5bdc797323f4ba83c0&imgtype=0&src=http%3A%2F%2Fwww.hao1111.cn%2Fuploads%2Fallimg%2F161227%2F2139113R6-0.jpg"],
     name: "ash",
     indicator: true
   },
-  showHud: function() {
-
+  showHud: function(error) {
+    wx.showToast({
+      title: '成功',
+      icon: 'success',
+      duration: 2000
+    })
   },
   //进入详情界面
   goDetail: function(item) {
@@ -16,12 +20,12 @@ Page({
 
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
-    this.showHud()
+    //this.showHud()
     var that=this
     var imageArray = that.data.imageUrl
     this.setData({
       indicator: imageArray.length>1?true:false
-    })
+    })//如果图片只有一张则不显示indicator
     wx.request({
       url: 'https://c.m.163.com/nc/article/list/T1467284926140/0-20.html',
       data: {},
@@ -39,12 +43,20 @@ Page({
         that.setData({
            dataArray: arr
          })
+         try{
+            wx.setStorageSync('newsStorage', arr)
+         }catch (error){
+            console.log(error)
+         }
+         
       },
       fail: function() {
         // fail
+        //that.showHud()
       },
       complete: function() {
         // complete
+        //that.showHud()
       }
     })
   },

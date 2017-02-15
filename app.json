@@ -7,23 +7,30 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "red",
+    "navigationBarBackgroundColor": "blue",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   },
   "tabBar": {
+    "selectedColor": "green",
     "list": [
       {
-      "pagePath": "pages/news/news",
-      "text": "news"
+        "pagePath": "pages/news/news",
+        "text": "news",
+        "iconPath": "images/news.png",
+        "selectedIconPath": "images/news.png"
       },
       {
-      "pagePath": "pages/videos/videos",
-      "text": "videos"
-     },
+        "pagePath": "pages/videos/videos",
+        "text": "videos",
+        "iconPath": "images/videos.png",
+        "selectedIconPath": "images/videos.png"
+      },
       {
-      "pagePath": "pages/index/index",
-      "text": "index"
+        "pagePath": "pages/index/index",
+        "text": "index",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine.png"
       }
     ]
   }
